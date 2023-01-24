@@ -5,9 +5,10 @@ class Employee(models.Model):
     _name = "smcn.employee"
     _description = "Employee of SMC"
 
-    #name = fields.Char('Name', required=True, translate=True)
-    #last_name = fields.Char('Last name', required=True, translate=True)
-    #dni = fields.Integer(required=True, default=10)
+    name = fields.Char('Name', required=True)
+    last_name = fields.Char('Last name', required=True)
+    dni = fields.Integer(required=True, string='DNI')
+    gender = fields.Selection([('male','Male'),('female','Female')], string='Gender')
     #number_of_months = fields.Integer('# Months', required=True)
     #active = fields.Boolean('Active', default=True)
 
