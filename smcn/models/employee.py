@@ -1,12 +1,11 @@
 from odoo import fields, models
 
 
-class Employees(models.Model):
-    _name = "employees.model"
+class Employee(models.Model):
+    _name = "smcn.employee"
     _description = "Employee of SMC"
-    _order = "sequence"
 
-    name = fields.Char('Name', required=True, translate=True)
+    #name = fields.Char('Name', required=True, translate=True)
     #last_name = fields.Char('Last name', required=True, translate=True)
     #dni = fields.Integer(required=True, default=10)
     #number_of_months = fields.Integer('# Months', required=True)
