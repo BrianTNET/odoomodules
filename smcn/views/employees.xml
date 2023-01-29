@@ -9,5 +9,5 @@
         action="employee_model_action"
         name="Hospital"
         sequence="1"
-        web_icon="smc,static/description/icon.png"
+        web_icon="smcn,static/description/icon.png"
     />
